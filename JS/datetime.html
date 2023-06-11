@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+</head>
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <style>
+        .container{
+            font-size: 23px;
+            font-weight: bold;
+            padding: 34px;
+            margin: 4px;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        #time{
+            font-weight: lighter;
+        }
+    </style>
+    <script>
+        let timedate= new Date();
+        console.log(timedate);
+        let newDate= new Date("2023-02-15")
+        console.log(newDate);
+        let dt=new Date(2023,05,03,12,00,00,15);
+        console.log(dt);
+        let date=dt.getDate();
+        console.log(date);
+        console.log(dt.getHours());
+        dt.setDate(2);
+        dt.setMonth(4);
+        console.log(dt.getDate(),dt.getMonth());
+        console.log(dt);
+
+        setInterval(updatetime,5000);
+        function updatetime(){
+            time.innerHTML=new Date()
+            console.log(time.innerHTML)
+        }
+    </script>
+</body>
+</html>

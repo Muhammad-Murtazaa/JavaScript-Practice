@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        Arrow Functions Here
+    </div>
+</body>
+<script>
+    console.log("All Working");
+    function greet(){
+        console.log("Greetings")
+    }
+    greet()
+    great=()=>{
+        console.log("Greetingss")
+    }
+    great()
+    setTimeout(() => {
+        console.log("We are insdie Set timout")
+    }, 2000);
+
+    let sum=(a,b)=>{
+        let c=a+b;
+        console.log("Sum is "+c);
+    }
+    sum(1,3);
+</script>
+</html>

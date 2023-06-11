@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <p>
+                This is a row in container
+            </p>
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </div>
+    <script>
+        var string1 ="My Name "
+        var string2 ="is "
+        var string3 ="Muhammad Murtaza "
+        console.log(string1+string2+string3)
+        
+        var f= new String("murtaza azaa")
+        console.log(f)
+        var pos=f.indexOf("aza")
+        console.log(pos)
+        pos=f.lastIndexOf("aza")
+        console.log(pos)
+        var sli=f.slice(0,7)
+        console.log(sli)
+        console.log(f.substr(0,10))
+        console.log(f.replace("azaa","adeeba"))
+        console.log(f.toUpperCase())
+        console.log(f.toLowerCase())
+        var g = f.concat(" adeeba fatima")
+        console.log(g)
+        var hWithWhiteSpaces= "      Hello     Murtaza     "
+        console.log(hWithWhiteSpaces.trim())
+        console.log(f.charAt(5))
+        console.log(f[0])
+        let h=3;
+        console.log(h)
+        {
+            let i=4;
+            console.log(i)
+        }
+        console.log(h)
+        const i="HEHEHEH"
+        console.log(i)
+
+        let age=23;
+        if(age<20){
+            console.log("have a drink");
+        }
+        else if(age==22){
+            console.log("Stay there")
+        }
+        else{
+            console.log("drink water")
+        }
+        const cup=43
+        switch (cup) {
+            case 4:
+                console.log("the value is 4")
+                break;
+            case 41:
+                console.log("the value is 41")
+                break;
+            case 42:
+                console.log("the value is 42")
+                break;
+            case 43:
+                console.log("the value is 43")
+                break;
+    
+            default:
+                console.log("NAN")
+                break;
+        }
+        let myvar1=10;
+        let myvar2="Murtaza H";
+        let myvar3=true;
+        let myvar4=null;
+        let myvar5=undefined;
+        let myname={
+            name:"Murtaza",
+            age:10,
+            uni:"UIT",
+        }   
+        console.log(myname)
+        let names=[1,2,"Adee",true];
+        console.log(names)
+        console.log(names[0])
+        console.log(names[-1])
+        console.log(names[2])
+        console.log(names.slice(0,3))
+
+        let namess=new Array(1,2,"Adee",true);
+        console.log(namess.length)
+        names=names.sort();
+        names.push("Fat");
+        console.log(names)
+        let count= new Array(10);
+        console.log(count)
+    </script>
+</body>
+</html>

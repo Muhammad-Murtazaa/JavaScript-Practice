@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Tutorial</h1>
+    </div>
+    <script>
+        console.log("Hello JSON");
+        let jsonObh={
+            name:"Murtaza",
+            age:22,
+            Uni:"UIT",
+        };
+        console.log(jsonObh);
+        let a=JSON.stringify(jsonObh);
+        console.log(a);
+        a=a.replace("Murtaza","Ali");
+        a=a.replace("22","25");
+        console.log(a)
+        b=JSON.parse(a);
+        console.log(b);
+    </script>
+</body>
+</html>
